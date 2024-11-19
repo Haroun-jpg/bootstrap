@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore With Us - Travel Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Explore With Us</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="hero">
+    <h1>Discover Your Next Adventure</h1>
+    <p>Explore breathtaking destinations with us.</p>
+    <a href="#destinations" class="btn btn-primary btn-lg">View Destinations</a>
+  </div>
+
+  
+  <section id="destinations" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Top Destinations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Paris.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">The city of love awaits you with its iconic Eiffel Tower and rich culture.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="maldive.jpg" class="card-img-top" alt="Maldives">
+            <div class="card-body">
+              <h5 class="card-title">Maldives</h5>
+              <p class="card-text">Experience the serenity of pristine beaches and turquoise waters.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="japan.jpg" class="card-img-top" alt="Japan">
+            <div class="card-body">
+              <h5 class="card-title">Japan</h5>
+              <p class="card-text">Immerse yourself in the blend of traditional and modern culture.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="tours" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Tour Packages</h2>
+      <div class="accordion" id="toursAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              European Highlights
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+            <div class="accordion-body">
+              Experience the charm of Europe with visits to Paris, Rome, and Amsterdam. <a href="#" class="text-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Tropical Escapade
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+            <div class="accordion-body">
+              Relax on the serene beaches of the Maldives and Bali. <a href="#" class="text-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Asian Adventure
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+            <div class="accordion-body">
+              Explore the rich culture of Japan and Thailand. <a href="#" class="text-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination of Interest</label>
+          <input type="text" class="form-control" id="destination">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Explore With Us. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Twitter</a>
+        <a href="#" class="text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
